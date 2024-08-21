@@ -13,12 +13,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.green,
-          title: Text("First App",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 30,
-            fontWeight: FontWeight.bold
-          ),),
+          title: Text(
+            "First App",
+            style: TextStyle(
+                color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
+          ),
+          centerTitle: true,
+          leading: Icon(Icons.arrow_back_ios,color: Colors.white,),
         ),
       ),
     );
