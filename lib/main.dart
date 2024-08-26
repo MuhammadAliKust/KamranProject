@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.yellow,
         appBar: AppBar(
           backgroundColor: Colors.green,
           title: Text(
@@ -38,17 +39,37 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Center(
-          child: Text(
-            "First Online Class",
-            style: TextStyle(
-                fontSize: 30, color: Colors.green, fontWeight: FontWeight.bold),
-          ),
+        body: Row(
+          children: [
+            Text(
+              "First Text",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+            SizedBox(width: 10,),
+            Text(
+              "Second Text",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+            SizedBox(width: 20,),
+            Text(
+              "Third Text",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+          ],
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: (){},
+          onPressed: () {},
           backgroundColor: Colors.green,
-          child: Icon(Icons.add,color: Colors.white,),
+          child: Icon(
+            Icons.add,
+            color: Colors.white,
+          ),
         ),
       ),
     );
