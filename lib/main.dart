@@ -19,7 +19,36 @@ class MyApp extends StatelessWidget {
                 color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
           ),
           centerTitle: true,
-          leading: Icon(Icons.arrow_back_ios,color: Colors.white,),
+          leading: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+          actions: [
+            Icon(
+              Icons.notifications,
+              color: Colors.white,
+            ),
+            Icon(
+              Icons.shopping_cart,
+              color: Colors.white,
+            ),
+            Icon(
+              Icons.exit_to_app,
+              color: Colors.white,
+            ),
+          ],
+        ),
+        body: Center(
+          child: Text(
+            "First Online Class",
+            style: TextStyle(
+                fontSize: 30, color: Colors.green, fontWeight: FontWeight.bold),
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){},
+          backgroundColor: Colors.green,
+          child: Icon(Icons.add,color: Colors.white,),
         ),
       ),
     );
