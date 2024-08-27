@@ -40,27 +40,12 @@ class MyApp extends StatelessWidget {
           ],
         ),
         body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text(
-              "First Text",
-              style: TextStyle(
-                fontSize: 20,
-              ),
-            ),
-            SizedBox(width: 10,),
-            Text(
-              "Second Text",
-              style: TextStyle(
-                fontSize: 20,
-              ),
-            ),
-            SizedBox(width: 20,),
-            Text(
-              "Third Text",
-              style: TextStyle(
-                fontSize: 20,
-              ),
-            ),
+            Icon(Icons.add),
+            Icon(Icons.ac_unit),
+            Icon(Icons.ac_unit),
+            Icon(Icons.access_time),
           ],
         ),
         floatingActionButton: FloatingActionButton(
