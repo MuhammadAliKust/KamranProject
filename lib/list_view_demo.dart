@@ -8,7 +8,7 @@ class ListViewDemo extends StatefulWidget {
 }
 
 class _ListViewDemoState extends State<ListViewDemo> {
-  int selectedIndex = -1;
+  List<int> selectedIndex = [];
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +21,16 @@ class _ListViewDemoState extends State<ListViewDemo> {
           itemBuilder: (context, i) {
             return ListTile(
               onTap: () {
-                selectedIndex = i;
+                if (selectedIndex.contains(i)) {
+                  selectedIndex.remove(i);
+                } else {
+                  selectedIndex.add(i);
+                }
+
                 setState(() {});
               },
-              tileColor: selectedIndex == i ? Colors.green : Colors.white,
+              tileColor:
+                  selectedIndex.contains(i) ? Colors.green : Colors.white,
               leading: Icon(Icons.notifications),
               title: Text("Selected Index: $selectedIndex | Index: $i"),
               subtitle: Text("Notification SubTitle"),
