@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kamran_project/list_view_demo.dart';
 import 'package:kamran_project/login.dart';
+import 'package:kamran_project/page_view_demo.dart';
 import 'package:kamran_project/single_list.dart';
 
 import 'image_demo.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: SingleListViewDemo(),
+      home: PageViewDemo(),
     );
   }
 }
