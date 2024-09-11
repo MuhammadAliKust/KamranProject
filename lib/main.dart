@@ -5,6 +5,7 @@ import 'package:kamran_project/list_view_demo.dart';
 import 'package:kamran_project/login.dart';
 import 'package:kamran_project/page_view_demo.dart';
 import 'package:kamran_project/single_list.dart';
+import 'package:kamran_project/tabbar_demo.dart';
 
 import 'image_demo.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: BottomNavBarView(),
+      home: TabbarDemo(),
     );
   }
 }
