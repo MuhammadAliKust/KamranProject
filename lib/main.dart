@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kamran_project/bottom_nav_bar.dart';
+import 'package:kamran_project/dialog_box.dart';
 import 'package:kamran_project/dynamic_list.dart';
 import 'package:kamran_project/list_view_demo.dart';
 import 'package:kamran_project/login.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: TabbarDemo(),
+      home: DialogBoxView(),
     );
   }
 }
