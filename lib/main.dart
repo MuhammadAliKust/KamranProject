@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kamran_project/bottom_nav_bar.dart';
 import 'package:kamran_project/bottom_sheet.dart';
+import 'package:kamran_project/calculator_view.dart';
 import 'package:kamran_project/dialog_box.dart';
 import 'package:kamran_project/dynamic_list.dart';
 import 'package:kamran_project/list_view_demo.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: BottomSheetView(),
+      home: CalculatorView(),
     );
   }
 }
